@@ -1,0 +1,1 @@
+global.antenna.dura -= 0.03;

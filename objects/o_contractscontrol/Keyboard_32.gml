@@ -1,0 +1,1 @@
+show_message(string_length(word));

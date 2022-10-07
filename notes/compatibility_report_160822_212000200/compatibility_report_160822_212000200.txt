@@ -1,0 +1,88 @@
+Converting GML script: ${project_dir}\scripts\draw_text_shadow\draw_text_shadow.gml
+Converted description /// @description draw_text_shadow(x, y, string, shadow length, shadow direction, shadow color, shadow alpha);/// @param x
+/// @param  y
+/// @param  string
+/// @param  shadow length
+/// @param  shadow direction
+/// @param  shadow color
+/// @param  shadow alpha
+
+Converting GML script: ${project_dir}\scripts\draw_text_ext_shadow\draw_text_ext_shadow.gml
+ERROR: C:\Users\Pedro Henrique\AppData\Local\GameMakerStudio2\GMS2TEMP\1405526994_Draw_Text_Shadow_a874a82f\mvc\scripts\draw_text_ext_shadow\draw_text_ext_shadow.gml - 21: unexpected syntax error
+Too many errors - GML not processed : ${project_dir}\scripts\draw_text_ext_shadow\draw_text_ext_shadow.gml
+
+Converting GML script: ${project_dir}\scripts\draw_text_ext_transformed_shadow\draw_text_ext_transformed_shadow.gml
+Converted description /// @description draw_text_ext_transformed_shadow(x, y, string, sep, w, xscale, yscale, angle, shadow length, shadow direction, shadow color, shadow alpha);/// @param x
+/// @param  y
+/// @param  string
+/// @param  sep
+/// @param  w
+/// @param  xscale
+/// @param  yscale
+/// @param  angle
+/// @param  shadow length
+/// @param  shadow direction
+/// @param  shadow color
+/// @param  shadow alpha
+
+Converting GML script: ${project_dir}\scripts\draw_text_transformed_shadow\draw_text_transformed_shadow.gml
+Converted description /// @description draw_text_transformed_shadow(x, y, string, xscale, yscale, angle, shadow length, shadow direction, shadow color, shadow alpha);/// @param x
+/// @param  y
+/// @param  string
+/// @param  xscale
+/// @param  yscale
+/// @param  angle
+/// @param  shadow length
+/// @param  shadow direction
+/// @param  shadow color
+/// @param  shadow alpha
+
+Converting GML script: ${project_dir}\scripts\draw_text_shadow_colour\draw_text_shadow_colour.gml
+Converted description /// @description draw_text_shadow_colour(x, y, string, shadow length, shadow direction, shadow c1, shadow c2, shadow c3, shadow c4, shadow alpha);/// @param x
+/// @param  y
+/// @param  string
+/// @param  shadow length
+/// @param  shadow direction
+/// @param  shadow c1
+/// @param  shadow c2
+/// @param  shadow c3
+/// @param  shadow c4
+/// @param  shadow alpha
+
+Converting GML script: ${project_dir}\scripts\draw_text_shadow_color\draw_text_shadow_color.gml
+Converted description /// @description draw_text_shadow_color(x, y, string, shadow length, shadow direction, shadow c1, shadow c2, shadow c3, shadow c4, shadow alpha);/// @param x
+/// @param  y
+/// @param  string
+/// @param  shadow length
+/// @param  shadow direction
+/// @param  shadow c1
+/// @param  shadow c2
+/// @param  shadow c3
+/// @param  shadow c4
+/// @param  shadow alpha
+
+Converting GML script: ${project_dir}\scripts\draw_text_colour_shadow\draw_text_colour_shadow.gml
+Converted description /// @description draw_text_colour_shadow(x, y, string, c1, c2, c3, c4, shadow length, shadow direction, shadow colour, shadow alpha);/// @param x
+/// @param  y
+/// @param  string
+/// @param  c1
+/// @param  c2
+/// @param  c3
+/// @param  c4
+/// @param  shadow length
+/// @param  shadow direction
+/// @param  shadow colour
+/// @param  shadow alpha
+
+Converting GML script: ${project_dir}\scripts\draw_text_color_shadow\draw_text_color_shadow.gml
+Converted description /// @description draw_text_color_shadow(x, y, string, c1, c2, c3, c4, shadow length, shadow direction, shadow color, shadow alpha);/// @param x
+/// @param  y
+/// @param  string
+/// @param  c1
+/// @param  c2
+/// @param  c3
+/// @param  c4
+/// @param  shadow length
+/// @param  shadow direction
+/// @param  shadow color
+/// @param  shadow alpha
