@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_category3",
-    "path": "sprites/s_category3/s_category3.yy",
+    "name": "s_bkgshop2",
+    "path": "sprites/s_bkgshop2/s_bkgshop2.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,9 +20,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":13,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -30,7 +28,7 @@
     "path": "folders/Objetos/Menus/MenuPC/Loja.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_shopcatego3",
+  "name": "o_bkgloja2",
   "tags": [],
   "resourceType": "GMObject",
 }

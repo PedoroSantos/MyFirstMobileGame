@@ -13,8 +13,9 @@ if (onclicked = 1)
 		layer_set_visible("ins_pc_map1",0);
 		layer_set_visible("as_pc_map2",0);
 		layer_set_visible("ef_blur",0);
+		layer_set_visible("ins_shop",0);
 		o_bkgmenus.active = 0;
-		
+		global.onshop = 0;
 		global.onmap = 0;
 		stimer = 4;
 		onclicked = 0;

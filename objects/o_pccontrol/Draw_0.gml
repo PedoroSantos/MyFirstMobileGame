@@ -12,8 +12,8 @@ if (onmenu3)
 		draw_set_font(ft_maintexts2);
 		draw_set_halign(fa_center);
 		draw_set_font(ft_titletexts);
-		draw_text_ext_transformed_color(o_points.x - 98.5,o_points.y + 122,"global influence " + output,99,300,.9,.9,0,c_black,c_black,c_black,c_black,1);
-		draw_text_ext_transformed_color(o_points.x - 98.5,o_points.y + 120,"global influence " + output,99,300,.9,.9,0,c_white,c_white,c_white,c_white,1);
+		draw_text_ext_transformed_color(o_points.x - 80.5,o_points.y + 122,"global influence " + output,99,300,.9,.9,0,c_black,c_black,c_black,c_black,1);
+		draw_text_ext_transformed_color(o_points.x - 80.5,o_points.y + 120,"global influence " + output,99,300,.9,.9,0,c_white,c_white,c_white,c_white,1);
 	}
 }
 
