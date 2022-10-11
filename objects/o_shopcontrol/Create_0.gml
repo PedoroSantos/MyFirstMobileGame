@@ -17,6 +17,8 @@ shop_itens[1] = { //itens da loja
 	item_influ - quanto ele aumenta em porcentagem na influencia - Valor inicial tem que ser 0!
 	item_req - quanto de nivel do player é necessario
 	item_sell - quanto você ganha de dinheiro com o item 
+	item_client - quantos clientes cabem no sistema de armazemento
+	item_chance - diminui a chance de ser hackeado com o tempo, de acordo com o valor em porcentagem.
 	
 	- visual:
 	Item_title - Titulo que vai ser exibido
@@ -26,13 +28,50 @@ shop_itens[1] = { //itens da loja
 	
 	#region "Hardware" Itens:
 	
+	// -- PC
+	pc_lvl: 1,
+	pc_paid: 0, 
+	pc_req: 1,
+	pc_price: 1800, 
+	pc_title: "Personal Computer:",
+	pc_desc: "Upgrade your shop itens, adding more of them.",
+	
+	// -- Antena
+	antena_lvl: 1,
+	antena_paid: 0, 
+	antena_req: 1,
+	antena_price: 500, 
+	antena_time: 4, //acelera o tempo de ganhar dinheiro para 1.5x e isso dura 4 seg
+	antena_title: "Antenna:",
+	antena_desc: "Accelerate the time for a shor ammount of time when you fix it.",
+	
+	// -- HD
+	hd_lvl: 1,
+	hd_paid: 0, 
+	hd_req: 1,
+	hd_price: 800, 
+	hd_client: 10,
+	hd_title: "Hard Disk:",
+	hd_desc: "Increases the limit of clients on your server.",
+	
 	#endregion
+
+	
 	#region "Software" Itens:
 		
-	
-	
+	// -- AntiMalware
+	malware_lvl: 1,
+	malware_paid: 0, 
+	malware_req: 2,
+	malware_price: 400, 
+	malware_chance: 25,
+	malware_title: "Personal Computer:",
+	malware_desc: "Upgrade your shop itens, adding more of them.",
+
+
 	
 	#endregion
+	
 	#region "Network" Itens:
 	
 	// -- Switch

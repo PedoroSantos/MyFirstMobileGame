@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "s_points",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -24,13 +27,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7ce15bfd-3ae3-4746-91ed-85a07c9bce9c","path":"sprites/s_points/s_points.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7ce15bfd-3ae3-4746-91ed-85a07c9bce9c","path":"sprites/s_points/s_points.yy",},"LayerId":{"name":"b5d30675-2cdc-4f67-90df-e2573933dbb7","path":"sprites/s_points/s_points.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"7ce15bfd-3ae3-4746-91ed-85a07c9bce9c","path":"sprites/s_points/s_points.yy",},"LayerId":{"name":"7c49e5b5-0930-4b84-bb08-c54b0615b320","path":"sprites/s_points/s_points.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"s_points","path":"sprites/s_points/s_points.yy",},"resourceVersion":"1.0","name":"7ce15bfd-3ae3-4746-91ed-85a07c9bce9c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7ce15bfd-3ae3-4746-91ed-85a07c9bce9c",},
   ],
   "sequence": {
-    "spriteId": {"name":"s_points","path":"sprites/s_points/s_points.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "s_points",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,9 +43,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"e8917193-1f4b-4306-b938-41f3071c0c9c","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7ce15bfd-3ae3-4746-91ed-85a07c9bce9c","path":"sprites/s_points/s_points.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -59,23 +61,14 @@
     "yorigin": 147,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"s_points","path":"sprites/s_points/s_points.yy",},
-    "resourceVersion": "1.3",
-    "name": "s_points",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":50.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"b5d30675-2cdc-4f67-90df-e2573933dbb7","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7c49e5b5-0930-4b84-bb08-c54b0615b320","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b5d30675-2cdc-4f67-90df-e2573933dbb7","visible":true,"isLocked":false,"blendMode":0,"opacity":50.0,"displayName":"Layer 1",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7c49e5b5-0930-4b84-bb08-c54b0615b320","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "mappoints",
     "path": "folders/Sprites/interagiveis/Mapa/mappoints.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "s_points",
-  "tags": [],
-  "resourceType": "GMSprite",
 }
