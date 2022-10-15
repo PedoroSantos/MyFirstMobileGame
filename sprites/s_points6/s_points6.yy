@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "s_points6",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 589,
   "height": 295,
   "textureGroupId": {
@@ -24,14 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7ce15bfd-3ae3-4746-91ed-85a07c9bce9c","path":"sprites/s_points6/s_points6.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7ce15bfd-3ae3-4746-91ed-85a07c9bce9c","path":"sprites/s_points6/s_points6.yy",},"LayerId":{"name":"ffac0fb0-2d74-42e0-884e-8776fe83a5c8","path":"sprites/s_points6/s_points6.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"7ce15bfd-3ae3-4746-91ed-85a07c9bce9c","path":"sprites/s_points6/s_points6.yy",},"LayerId":{"name":"b5d30675-2cdc-4f67-90df-e2573933dbb7","path":"sprites/s_points6/s_points6.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"7ce15bfd-3ae3-4746-91ed-85a07c9bce9c","path":"sprites/s_points6/s_points6.yy",},"LayerId":{"name":"7c49e5b5-0930-4b84-bb08-c54b0615b320","path":"sprites/s_points6/s_points6.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"s_points6","path":"sprites/s_points6/s_points6.yy",},"resourceVersion":"1.0","name":"7ce15bfd-3ae3-4746-91ed-85a07c9bce9c","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7ce15bfd-3ae3-4746-91ed-85a07c9bce9c",},
   ],
   "sequence": {
-    "spriteId": {"name":"s_points6","path":"sprites/s_points6/s_points6.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "s_points6",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -42,9 +44,9 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"0cdf524c-7b20-4d91-9bf7-c695c0ff2a84","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7ce15bfd-3ae3-4746-91ed-85a07c9bce9c","path":"sprites/s_points6/s_points6.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -60,24 +62,15 @@
     "yorigin": 147,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"s_points6","path":"sprites/s_points6/s_points6.yy",},
-    "resourceVersion": "1.3",
-    "name": "s_points6",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":false,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1 (2)","resourceVersion":"1.0","name":"ffac0fb0-2d74-42e0-884e-8776fe83a5c8","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":50.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"b5d30675-2cdc-4f67-90df-e2573933dbb7","tags":[],"resourceType":"GMImageLayer",},
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7c49e5b5-0930-4b84-bb08-c54b0615b320","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ffac0fb0-2d74-42e0-884e-8776fe83a5c8","visible":false,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1 (2)",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b5d30675-2cdc-4f67-90df-e2573933dbb7","visible":true,"isLocked":false,"blendMode":0,"opacity":50.0,"displayName":"Layer 1",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7c49e5b5-0930-4b84-bb08-c54b0615b320","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "mappoints",
     "path": "folders/Sprites/interagiveis/Mapa/mappoints.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "s_points6",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

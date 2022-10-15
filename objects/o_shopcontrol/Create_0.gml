@@ -1,6 +1,8 @@
 tapdata = 0;
 incategory = 1;
 itensperpage = 0;
+global.buy = 0;
+global.buy_value = 0;
 globalvar shop_itens;
 shop_itens[0] = { // base dos itens da loja 
 
@@ -26,6 +28,8 @@ shop_itens[1] = { //itens da loja
 	
 	#region "Hardware" Itens:
 	
+	// -- Hard Disk
+
 	#endregion
 	#region "Software" Itens:
 		

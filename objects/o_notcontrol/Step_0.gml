@@ -26,4 +26,20 @@ if (payday)
 	}
 }
 
+if (buy) 
+{
+	alfa += .04;
+	fadetime -= .1;
+	if (fadetime <= 0)
+	{
+		alfa -= .06;
+		if (alfa <= 0)
+		{
+			fadetime = 10;
+			buy = 0;
+		}
+	}
+}
+
+
 	

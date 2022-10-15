@@ -12,9 +12,11 @@ if (onclicked = 1)
 			o_bkgmenus.active = 0;
 			layer_set_visible("ins_shop",0);
 			global.onshop = 0;
+
 		}
 		else
 		{
+			
 			o_bkgmenus.active = 1;
 			layer_set_visible("ins_shop",1);	
 			layer_set_visible("as_pc_map2",0);

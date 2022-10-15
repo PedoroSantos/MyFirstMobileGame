@@ -33,6 +33,8 @@ switch (shop_itens[0].category) //categorias visual
 	
 	
 	#region - Item 1
+
+	
 	//  -- titulo 
 	draw_set_font (ft_titletexts);
 	draw_set_halign(fa_center)
@@ -63,7 +65,27 @@ switch (shop_itens[0].category) //categorias visual
 	draw_set_color(c_white);
 	draw_text_ext_transformed_color(o_shopitem1.x + 32 ,o_shopitem1.y + 14,"Lvl:" + string(shop_itens[1].switch_lvl),18,180,.4,.4,0,c_black,c_black,c_black,c_black,1);
 	draw_text_ext_transformed(o_shopitem1.x + 32,o_shopitem1.y + 13,"Lvl:"+ string(shop_itens[1].switch_lvl),18,180,.4,.4,0);
-
+	
+	// Comprado
+	if (shop_itens[1].switch_price > money) or (shop_itens[1].switch_paid = 1) 
+	{
+		draw_sprite_ext(o_shopitem1.sprite_index, 0, o_shopitem1.x,o_shopitem1.y,o_shopitem1.image_xscale,o_shopitem1.image_yscale,0,c_dkgray,.8);
+		draw_set_font (ft_titletexts);
+		if (shop_itens[1].switch_paid = 1) 
+		{
+		draw_set_halign(fa_center)
+		draw_text_ext_transformed_color(o_shopitem1.x ,o_shopitem1.y - 7.5,"You already own this item.",99,300,.4,.4,0,c_black,c_black,c_black,c_black,1);
+		draw_text_ext_transformed_color(o_shopitem1.x ,o_shopitem1.y - 8.5,"You already own this item.",99,300,.4,.4,0,c_white,c_white,c_white,c_white,1);
+		}
+		if (shop_itens[1].switch_price > money) 
+		{
+		draw_set_halign(fa_center)
+		draw_text_ext_transformed_color(o_shopitem1.x ,o_shopitem1.y - 7.5,"You do not have money",99,300,.4,.4,0,c_black,c_black,c_black,c_black,1);
+		draw_text_ext_transformed_color(o_shopitem1.x ,o_shopitem1.y - 8.5,"You do not have money",99,300,.4,.4,0,c_white,c_white,c_white,c_white,1);
+		}
+		
+	}
+	
 	
 
 
@@ -96,7 +118,25 @@ switch (shop_itens[0].category) //categorias visual
 	draw_set_color(c_white);
 	draw_text_ext_transformed_color(o_shopitem2.x + 32 ,o_shopitem2.y + 14,"Lvl:" + string(shop_itens[1].intpkg_lvl),18,180,.4,.4,0,c_black,c_black,c_black,c_black,1);
 	draw_text_ext_transformed(o_shopitem2.x + 32,o_shopitem2.y + 13,"Lvl:"+ string(shop_itens[1].intpkg_lvl),18,180,.4,.4,0);
-
+	// Comprado
+	if (shop_itens[1].intpkg_price > money) or (shop_itens[1].intpkg_paid = 1) 
+	{
+		draw_sprite_ext(o_shopitem2.sprite_index, 0, o_shopitem2.x,o_shopitem2.y,o_shopitem2.image_xscale,o_shopitem2.image_yscale,0,c_dkgray,.8);
+		draw_set_font (ft_titletexts);
+		if (shop_itens[1].intpkg_paid = 1) 
+		{
+		draw_set_halign(fa_center)
+		draw_text_ext_transformed_color(o_shopitem2.x ,o_shopitem2.y - 7.5,"You already own this item.",99,300,.4,.4,0,c_black,c_black,c_black,c_black,1);
+		draw_text_ext_transformed_color(o_shopitem2.x ,o_shopitem2.y - 8.5,"You already own this item.",99,300,.4,.4,0,c_white,c_white,c_white,c_white,1);
+		}
+		if (shop_itens[1].intpkg_price > money) 
+		{
+		draw_set_halign(fa_center)
+		draw_text_ext_transformed_color(o_shopitem2.x ,o_shopitem2.y - 7.5,"You do not have money",99,300,.4,.4,0,c_black,c_black,c_black,c_black,1);
+		draw_text_ext_transformed_color(o_shopitem2.x ,o_shopitem2.y - 8.5,"You do not have money",99,300,.4,.4,0,c_white,c_white,c_white,c_white,1);
+		}
+		
+	}
 
 
 
@@ -129,6 +169,25 @@ switch (shop_itens[0].category) //categorias visual
 	draw_set_color(c_white);
 	draw_text_ext_transformed_color(o_shopitem3.x + 32 ,o_shopitem3.y + 14,"Lvl:" + string(shop_itens[1].router_lvl),18,180,.4,.4,0,c_black,c_black,c_black,c_black,1);
 	draw_text_ext_transformed(o_shopitem3.x + 32,o_shopitem3.y + 13,"Lvl:"+ string(shop_itens[1].router_lvl),18,180,.4,.4,0);
+	// Comprado
+	if (shop_itens[1].router_price > money) or (shop_itens[1].router_paid = 1) 
+	{
+		draw_sprite_ext(o_shopitem3.sprite_index, 0, o_shopitem3.x,o_shopitem3.y,o_shopitem3.image_xscale,o_shopitem3.image_yscale,0,c_dkgray,.8);
+		draw_set_font (ft_titletexts);
+		if (shop_itens[1].router_paid = 1) 
+		{
+		draw_set_halign(fa_center)
+		draw_text_ext_transformed_color(o_shopitem3.x ,o_shopitem3.y - 7.5,"You already own this item.",99,300,.4,.4,0,c_black,c_black,c_black,c_black,1);
+		draw_text_ext_transformed_color(o_shopitem3.x ,o_shopitem3.y - 8.5,"You already own this item.",99,300,.4,.4,0,c_white,c_white,c_white,c_white,1);
+		}
+		if (shop_itens[1].router_price > money) 
+		{
+		draw_set_halign(fa_center)
+		draw_text_ext_transformed_color(o_shopitem3.x ,o_shopitem3.y - 7.5,"You do not have money",99,300,.4,.4,0,c_black,c_black,c_black,c_black,1);
+		draw_text_ext_transformed_color(o_shopitem3.x ,o_shopitem3.y - 8.5,"You do not have money",99,300,.4,.4,0,c_white,c_white,c_white,c_white,1);
+		}
+		
+	}
 
 
 
@@ -163,6 +222,25 @@ switch (shop_itens[0].category) //categorias visual
 	draw_set_color(c_white);
 	draw_text_ext_transformed_color(o_shopitem4.x + 32 ,o_shopitem4.y + 14,"Lvl:" + string(shop_itens[1].cable_lvl),18,180,.4,.4,0,c_black,c_black,c_black,c_black,1);
 	draw_text_ext_transformed(o_shopitem4.x + 32,o_shopitem4.y + 13,"Lvl:"+ string(shop_itens[1].cable_lvl),18,180,.4,.4,0);
+	// Comprado
+	if (shop_itens[1].cable_price > money) or (shop_itens[1].cable_paid = 1) 
+	{
+		draw_sprite_ext(o_shopitem4.sprite_index, 0, o_shopitem4.x,o_shopitem4.y,o_shopitem4.image_xscale,o_shopitem4.image_yscale,0,c_dkgray,.8);
+		draw_set_font (ft_titletexts);
+		if (shop_itens[1].cable_paid = 1) 
+		{
+		draw_set_halign(fa_center)
+		draw_text_ext_transformed_color(o_shopitem4.x ,o_shopitem4.y - 7.5,"You already own this item.",99,300,.4,.4,0,c_black,c_black,c_black,c_black,1);
+		draw_text_ext_transformed_color(o_shopitem4.x ,o_shopitem4.y - 8.5,"You already own this item.",99,300,.4,.4,0,c_white,c_white,c_white,c_white,1);
+		}
+		if (shop_itens[1].cable_price > money) 
+		{
+		draw_set_halign(fa_center)
+		draw_text_ext_transformed_color(o_shopitem4.x ,o_shopitem4.y - 7.5,"You do not have money",99,300,.4,.4,0,c_black,c_black,c_black,c_black,1);
+		draw_text_ext_transformed_color(o_shopitem4.x ,o_shopitem4.y - 8.5,"You do not have money",99,300,.4,.4,0,c_white,c_white,c_white,c_white,1);
+		}
+		
+	}
 
 
 

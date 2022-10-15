@@ -3,7 +3,7 @@
 globalvar onmenu0;
 onmenu0 = 1;
 globalvar money;
-money = 1200;
+money = 1000000000000000000000000;
 globalvar day;
 day = 0;
 globalvar lvl;
