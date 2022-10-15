@@ -130,7 +130,8 @@ switch (incategory) //Base das categorias -  Sistema de compra
 #endregion 
 #region -- Itens
 
-#region // Network
+
+#region // Network 
 
 // -- Switch
 switch (shop_itens[1].switch_lvl)
@@ -239,6 +240,117 @@ switch (shop_itens[1].cable_lvl)
 
 
 #endregion
+#region // Hardware
+
+// -- Switch
+switch (shop_itens[1].switch_lvl)
+{
+	case 1:
+	
+	
+	break;
+	case 2:
+	
+	shop_itens[1].switch_price = 1500;
+	
+	break;
+	case 3:
+
+
+	shop_itens[1].switch_price = 2000;
+
+	
+	break;
+	case 4:
+
+	shop_itens[1].switch_price = 0;
+	shop_itens[1].switch_paid = 1;
+	
+	break;
+}
+// -- Router
+switch (shop_itens[1].router_lvl)
+{
+	case 1:
+	
+	
+	break;
+	case 2:
+	
+	shop_itens[1].router_price = 1100;
+	
+	break;
+	case 3:
+
+
+	shop_itens[1].router_price = 1600;
+
+	
+	break;
+	case 4:
+
+	shop_itens[1].router_price = 0;
+	shop_itens[1].router_paid = 1;
+	
+	break;
+}
+// -- IntPkg
+switch (shop_itens[1].intpkg_lvl)
+{
+	case 1:
+	
+	
+	break;
+	case 2:
+	
+	shop_itens[1].intpkg_price = 800;
+	
+	break;
+	case 3:
+
+
+	shop_itens[1].intpkg_price = 1000;
+
+	
+	break;
+	case 4:
+
+	shop_itens[1].intpkg_price = 0;
+	shop_itens[1].intpkg_paid = 1;
+	
+	break;
+}
+// -- Cable
+switch (shop_itens[1].cable_lvl)
+{
+	case 1:
+	
+	
+	break;
+	case 2:
+	
+	shop_itens[1].cable_price = 800;
+	
+	break;
+	case 3:
+
+
+	shop_itens[1].cable_price = 1000;
+
+	
+	break;
+	case 4:
+
+	shop_itens[1].cable_price = 0;
+	shop_itens[1].cable_paid = 1;
+	
+	break;
+}
+
+
+#endregion
+
+
 #endregion
 #region --  Sistema de arrastar o dedo na área da loja:
 

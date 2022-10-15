@@ -29,12 +29,12 @@ shop_itens[1] = { //itens da loja
 	#region "Hardware" Itens:
 	
 	// -- PC
-	pc_lvl: 1,
-	pc_paid: 0, 
-	pc_req: 1,
-	pc_price: 1800, 
-	pc_title: "Personal Computer:",
-	pc_desc: "Upgrade your shop itens, adding more of them.",
+	server_lvl: 1,
+	server_paid: 0, 
+	server_req: 1,
+	server_price: 4000, 
+	server_title: "Server:",
+	server_desc: "Increases most the limit of clients.",
 	
 	// -- Antena
 	antena_lvl: 1,
@@ -43,7 +43,7 @@ shop_itens[1] = { //itens da loja
 	antena_price: 500, 
 	antena_time: 4, //acelera o tempo de ganhar dinheiro para 1.5x e isso dura 4 seg
 	antena_title: "Antenna:",
-	antena_desc: "Accelerate the time for a shor ammount of time when you fix it.",
+	antena_desc: "Accelerate the time when you fix it.",
 	
 	// -- HD
 	hd_lvl: 1,
@@ -53,6 +53,15 @@ shop_itens[1] = { //itens da loja
 	hd_client: 10,
 	hd_title: "Hard Disk:",
 	hd_desc: "Increases the limit of clients on your server.",
+	
+	// -- SSD
+	ssd_lvl: 1,
+	ssd_paid: 0, 
+	ssd_req: 1,
+	ssd_price: 15000, 
+	ssd_client: 10,
+	ssd_title: "SSD:",
+	ssd_desc: "More clientes and faster money.",
 	
 	#endregion
 
@@ -65,8 +74,24 @@ shop_itens[1] = { //itens da loja
 	malware_req: 2,
 	malware_price: 400, 
 	malware_chance: 25,
-	malware_title: "Personal Computer:",
-	malware_desc: "Upgrade your shop itens, adding more of them.",
+	malware_title: "Anti-Malware",
+	malware_desc: "Protect your computer from virus.",
+	// -- Theme Switcher
+	theme_lvl: 1,
+	theme_paid: 0, 
+	theme_time: 1,
+	theme_price: 90, 
+	theme_title: "Theme Switcher",
+	theme_desc: "Change the look of your game.",
+	// -- Theme Switcher
+	map_lvl: 1,
+	map_paid: 0, 
+	map_time: 1,
+	map_price: 120, 
+	map_title: "Map",
+	map_desc: "Where can you see its worldwide reach.",
+
+
 
 
 	
