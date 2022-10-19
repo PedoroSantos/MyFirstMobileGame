@@ -37,6 +37,7 @@ if (buy)
 		{
 			fadetime = 10;
 			buy = 0;
+			global.compro = 0;
 		}
 	}
 }

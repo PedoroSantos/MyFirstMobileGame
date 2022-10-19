@@ -2,6 +2,7 @@ tapdata = 0;
 incategory = 1;
 itensperpage = 0;
 globalvar shop_itens;
+globalvar on_itens;
 shop_itens[0] = { // base dos itens da loja 
 
 	category: ["Hardware","Software","Network"],
@@ -19,13 +20,14 @@ shop_itens[1] = { //itens da loja
 	item_sell - quanto você ganha de dinheiro com o item 
 	item_client - quantos clientes cabem no sistema de armazemento
 	item_chance - diminui a chance de ser hackeado com o tempo, de acordo com o valor em porcentagem.
+	item_quant - quantidade de itens que voce tem
+	item_limit -
 	
 	- visual:
 	Item_title - Titulo que vai ser exibido
 	item_Desc - Descrição do item que vai ser exibido
 	
 	*/
-	
 	#region "Hardware" Itens:
 	
 	// -- PC
@@ -49,6 +51,7 @@ shop_itens[1] = { //itens da loja
 	hd_lvl: 1,
 	hd_paid: 0, 
 	hd_req: 1,
+	hd_limit: 6,
 	hd_price: 800, 
 	hd_client: 10,
 	hd_title: "Hard Disk:",
@@ -59,13 +62,12 @@ shop_itens[1] = { //itens da loja
 	ssd_paid: 0, 
 	ssd_req: 1,
 	ssd_price: 15000, 
+	ssd_limit: 3,
 	ssd_client: 10,
 	ssd_title: "SSD:",
 	ssd_desc: "More clientes and faster money.",
 	
 	#endregion
-
-	
 	#region "Software" Itens:
 		
 	// -- AntiMalware
@@ -79,7 +81,7 @@ shop_itens[1] = { //itens da loja
 	// -- Theme Switcher
 	theme_lvl: 1,
 	theme_paid: 0, 
-	theme_time: 1,
+	theme_quant: 1,
 	theme_price: 90, 
 	theme_title: "Theme Switcher",
 	theme_desc: "Change the look of your game.",
@@ -96,7 +98,6 @@ shop_itens[1] = { //itens da loja
 
 	
 	#endregion
-	
 	#region "Network" Itens:
 	
 	// -- Switch
@@ -138,7 +139,35 @@ shop_itens[1] = { //itens da loja
 	cable_desc: "Increases the level of INFLUENCE"
 	
 	#endregion
+	
+	
+	
+	
 }
 
 
-
+hd_out = "";
+ssd_out = "";
+on_itens = { // Itens ativos
+	#region // Network
+	switch_on: 0,
+	intpkg_on: 0,
+	router_on: 0,
+	cable_on: 0,
+	
+	#endregion
+	#region // Hardware
+	hd_on: 0,
+	ssd_on: 0,
+	server_on: 0,
+	antena_on: 0,
+	
+	
+	#endregion
+	#region // Software
+	map_on: 0,
+	theme_on: 0,
+	malware_on: 0
+	#endregion
+	
+}

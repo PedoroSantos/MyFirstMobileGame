@@ -1,11 +1,12 @@
 //bac
-
+draw_set_valign(fa_top);
 switch (shop_itens[0].category) //categorias visual
 {
 	case "Hardware":
 	//  -- titulo da categoria 
 	draw_set_font (ft_titletexts);
 	draw_set_halign(fa_center)
+
 	draw_text_ext_transformed_color(o_shopcatego2.x  ,o_shopcatego2.y + 43.5,"Hardware Itens:",99,300,.8,.8,0,c_black,c_black,c_black,c_black,1);
 	draw_text_ext_transformed_color(o_shopcatego2.x ,o_shopcatego2.y + 42,"Hardware Itens:",99,300,.8,.8,0,c_white,c_white,c_white,c_white,1);
 	#region - Item 1
@@ -39,11 +40,11 @@ switch (shop_itens[0].category) //categorias visual
 	draw_set_font (ft_titletexts);
 	draw_set_halign(fa_left)
 	draw_set_color(c_white);
-	draw_text_ext_transformed_color(o_shopitem1.x + 32 ,o_shopitem1.y + 14,"Lvl:" + string(shop_itens[1].hd_lvl),18,180,.4,.4,0,c_black,c_black,c_black,c_black,1);
-	draw_text_ext_transformed(o_shopitem1.x + 32,o_shopitem1.y + 13,"Lvl:"+ string(shop_itens[1].hd_lvl),18,180,.4,.4,0);
+	draw_text_ext_transformed_color(o_shopitem1.x + 32 ,o_shopitem1.y + 14,hd_out,18,180,.4,.4,0,c_black,c_black,c_black,c_black,1);
+	draw_text_ext_transformed(o_shopitem1.x + 32,o_shopitem1.y + 13,hd_out,18,180,.4,.4,0);
 	
 	// Comprado
-	if (shop_itens[1].hd_price > money) or (shop_itens[1].hd_paid = 1) 
+	if (shop_itens[1].hd_price > money) or (shop_itens[1].hd_paid = 1) or (shop_itens[1].hd_limit == 0)
 	{
 		draw_sprite_ext(o_shopitem1.sprite_index, 0, o_shopitem1.x,o_shopitem1.y,o_shopitem1.image_xscale,o_shopitem1.image_yscale,0,c_dkgray,.8);
 		draw_set_font (ft_titletexts);
@@ -53,12 +54,20 @@ switch (shop_itens[0].category) //categorias visual
 		draw_text_ext_transformed_color(o_shopitem1.x ,o_shopitem1.y - 7.5,"You already own this item.",99,300,.4,.4,0,c_black,c_black,c_black,c_black,1);
 		draw_text_ext_transformed_color(o_shopitem1.x ,o_shopitem1.y - 8.5,"You already own this item.",99,300,.4,.4,0,c_white,c_white,c_white,c_white,1);
 		}
-		if (shop_itens[1].hd_price > money) 
+		if (shop_itens[1].hd_price > money) && (shop_itens[1].hd_limit != 0)
 		{
 		draw_set_halign(fa_center)
-		draw_text_ext_transformed_color(o_shopitem1.x ,o_shopitem1.y - 7.5,"You do not have money",99,300,.4,.4,0,c_black,c_black,c_black,c_black,1);
-		draw_text_ext_transformed_color(o_shopitem1.x ,o_shopitem1.y - 8.5,"You do not have money",99,300,.4,.4,0,c_white,c_white,c_white,c_white,1);
+		draw_text_ext_transformed_color(o_shopitem1.x ,o_shopitem1.y - 7.5,"You do not have money.",99,300,.4,.4,0,c_black,c_black,c_black,c_black,1);
+		draw_text_ext_transformed_color(o_shopitem1.x ,o_shopitem1.y - 8.5,"You do not have money.",99,300,.4,.4,0,c_white,c_white,c_white,c_white,1);
 		}
+				
+		if (shop_itens[1].hd_limit == 0)  && (shop_itens[1].hd_price < money)
+		{
+		draw_set_halign(fa_center)
+		draw_text_ext_transformed_color(o_shopitem1.x ,o_shopitem1.y - 7.5,"Buy servers for more space.",99,300,.4,.4,0,c_black,c_black,c_black,c_black,1);
+		draw_text_ext_transformed_color(o_shopitem1.x ,o_shopitem1.y - 8.5,"Buy servers for more space.",99,300,.4,.4,0,c_white,c_white,c_white,c_white,1);
+		}
+	
 		
 	}
 	
@@ -196,10 +205,10 @@ switch (shop_itens[0].category) //categorias visual
 	draw_set_font (ft_titletexts);
 	draw_set_halign(fa_left)
 	draw_set_color(c_white);
-	draw_text_ext_transformed_color(o_shopitem4.x + 32 ,o_shopitem4.y + 14,"Lvl:" + string(shop_itens[1].ssd_lvl),18,180,.4,.4,0,c_black,c_black,c_black,c_black,1);
-	draw_text_ext_transformed(o_shopitem4.x + 32,o_shopitem4.y + 13,"Lvl:"+ string(shop_itens[1].ssd_lvl),18,180,.4,.4,0);
+	draw_text_ext_transformed_color(o_shopitem4.x + 32 ,o_shopitem4.y + 14,ssd_out,18,180,.4,.4,0,c_black,c_black,c_black,c_black,1);
+	draw_text_ext_transformed(o_shopitem4.x + 32,o_shopitem4.y + 13,ssd_out,18,180,.4,.4,0);
 	// Comprado
-	if (shop_itens[1].ssd_price > money) or (shop_itens[1].ssd_paid = 1) 
+	if (shop_itens[1].ssd_price > money) or (shop_itens[1].ssd_paid = 1)  or (shop_itens[1].ssd_limit == 0)
 	{
 		draw_sprite_ext(o_shopitem4.sprite_index, 0, o_shopitem4.x,o_shopitem4.y,o_shopitem4.image_xscale,o_shopitem4.image_yscale,0,c_dkgray,.8);
 		draw_set_font (ft_titletexts);
@@ -209,11 +218,17 @@ switch (shop_itens[0].category) //categorias visual
 		draw_text_ext_transformed_color(o_shopitem4.x ,o_shopitem4.y - 7.5,"You already own this item.",99,300,.4,.4,0,c_black,c_black,c_black,c_black,1);
 		draw_text_ext_transformed_color(o_shopitem4.x ,o_shopitem4.y - 8.5,"You already own this item.",99,300,.4,.4,0,c_white,c_white,c_white,c_white,1);
 		}
-		if (shop_itens[1].ssd_price > money) 
+		if (shop_itens[1].ssd_price > money) && (shop_itens[1].ssd_limit != 0)
 		{
 		draw_set_halign(fa_center)
 		draw_text_ext_transformed_color(o_shopitem4.x ,o_shopitem4.y - 7.5,"You do not have money",99,300,.4,.4,0,c_black,c_black,c_black,c_black,1);
 		draw_text_ext_transformed_color(o_shopitem4.x ,o_shopitem4.y - 8.5,"You do not have money",99,300,.4,.4,0,c_white,c_white,c_white,c_white,1);
+		}
+		if (shop_itens[1].ssd_limit == 0) && (shop_itens[1].ssd_price < money)
+		{
+		draw_set_halign(fa_center)
+		draw_text_ext_transformed_color(o_shopitem4.x ,o_shopitem4.y - 7.5,"Buy servers for more space.",99,300,.4,.4,0,c_black,c_black,c_black,c_black,1);
+		draw_text_ext_transformed_color(o_shopitem4.x ,o_shopitem4.y - 8.5,"Buy servers for more space.",99,300,.4,.4,0,c_white,c_white,c_white,c_white,1);
 		}
 		
 	}
@@ -615,7 +630,7 @@ switch (shop_itens[0].category) //categorias visual
 		
 	}
 
-
+	
 
 
 

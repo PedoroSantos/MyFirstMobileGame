@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "o_bkgloja2",
   "spriteId": {
     "name": "s_bkgshop2",
     "path": "sprites/s_bkgshop2/s_bkgshop2.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -27,8 +31,4 @@
     "name": "Loja",
     "path": "folders/Objetos/Menus/MenuPC/Loja.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "o_bkgloja2",
-  "tags": [],
-  "resourceType": "GMObject",
 }

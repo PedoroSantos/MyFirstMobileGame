@@ -22,4 +22,3 @@ else
 	image_yscale = 6;
 }
 
-show_debug_message(string(theme) + "SEXO")

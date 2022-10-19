@@ -5,27 +5,7 @@ else {
 
 	
 
-if !window_has_focus()
-{
-	onmenu1 = 1;
-	layer_set_visible("ins_antena",0);
-	layer_set_visible("ins_config",1);
-	layer_set_visible("ins_pc",0);
-	layer_set_visible("ins_contracts",0);
-	layer_set_visible("ins_pc_hud",0);
-	layer_set_visible("ins_pc_map1",0);
-	layer_set_visible("as_pc_map2",0);
-	
-	layer_set_visible("ef_blur",1);
 
-	global.pause = 1;
-	onmenu2 = 0;
-	onmenu3 = 0;
-	onmenu4 = 0;
-	global.onmap = 0;
-	
-	
-}
 
 if (day >= inc)
 {
@@ -58,7 +38,23 @@ prefix = money/1000000000;
 suffix = "B";
 }
 output = string(prefix) + suffix;
-
+switch (shop_itens[1].theme_lvl)
+{
+	case 0:
+	theme = clamp(theme,-1,0);
+	case 1:
+	theme = clamp(theme,-1,1);
+	break;
+	case 2:
+	theme = clamp(theme,-1,2);
+	break;
+	case 3:
+	theme = clamp(theme,-1,3);
+	break;
+	case 4:
+	theme = clamp(theme,-1,4);
+	break;
+}
 switch (theme)
 {
 	case -1:
@@ -74,35 +70,43 @@ switch (theme)
 	break;
 	
 	case 1:
+
 	outtheme = "vintage";
 	layer_set_visible("Ef_theme1",1);
 	layer_set_visible("Ef_theme2",0);
 	layer_set_visible("Ef_theme3",0);
 	layer_set_visible("Ef_theme4",0);
+
 	break;
 	
 	case 2:
+
 	outtheme = "vaporwave";
 	layer_set_visible("Ef_theme1",0);
 	layer_set_visible("Ef_theme2",1);
 	layer_set_visible("Ef_theme3",0);
 	layer_set_visible("Ef_theme4",0);
+
 	break;
 	
 	case 3:
+
 	outtheme = "old";
 	layer_set_visible("Ef_theme1",0);
 	layer_set_visible("Ef_theme2",0);
 	layer_set_visible("Ef_theme3",1);
 	layer_set_visible("Ef_theme4",0);
+
 	break;
 	
 	case 4:
+
 	outtheme = "GameBoy";
 	layer_set_visible("Ef_theme1",0);
 	layer_set_visible("Ef_theme2",0);
 	layer_set_visible("Ef_theme3",0);
 	layer_set_visible("Ef_theme4",1);
+
 	break;
 	
 	case 5:
@@ -117,32 +121,14 @@ switch (missionlvl)
 	// -- NIVEL 1
 	case 1:
 	// Missão primaria:
-	if (global.pctouched = 1)
-	{
-		notpause = 1;
-		clmiss[1] = c_green;
-		mission[0] = "Mission Completed"
-		money += 200;
-		global.pctouched = 2;
-	}
+	mission [0] = "Buy a HD.";
+	clmiss[1] = c_white;	
 	// Missão Secundaria:
-	if (global.antenatouched = 1)
-	{
-		notpause = 1;
-		clmiss[2] = c_green;
-		mission[1] = "Mission Completed"
-		money += 200;
-		global.antenatouched = 2;
-	}
+	mission [1] = "Get your first client.";
+	clmiss[2] = c_white;
 	// missão terciaria
-	if (global.themetouched = 1)
-	{
-		notpause = 1;
-		clmiss[3] = c_green;
-		mission[2] = "Mission Completed"
-		money += 200;
-		global.themetouched = 2;
-	}
+	mission [2] = "Buy an internet package ";
+	clmiss[3] = c_white;
 	break;
 	
 	
@@ -150,13 +136,13 @@ switch (missionlvl)
 	case 2:
 	//Missão Primaria:
 	mission [0] = "Insert Mission.";
-	clmiss[1] = c_black;
+	clmiss[1] = c_white;
 	//Missão Secundaria:
 	mission [1] = "Insert Mission.";
-	clmiss[2] = c_black;
+	clmiss[2] = c_white;
 	// Missão Terciaria
 	mission [2] = "Insert Mission.";
-	clmiss[3] = c_black;
+	clmiss[3] = c_white;
 	
 	
 	break;

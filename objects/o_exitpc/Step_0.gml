@@ -14,9 +14,12 @@ if (onclicked = 1)
 		layer_set_visible("as_pc_map2",0);
 		layer_set_visible("ef_blur",0);
 		layer_set_visible("ins_shop",0);
+		layer_set_visible("ins_themes",0);
+		layer_set_visible("ins_apps",0);
 		o_bkgmenus.active = 0;
 		global.onshop = 0;
 		global.onmap = 0;
+		global.onthemes = 0;
 		stimer = 4;
 		onclicked = 0;
 		global.pause = 0;

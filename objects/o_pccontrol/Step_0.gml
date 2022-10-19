@@ -32,8 +32,11 @@ switch (domination)
 	break;
 
 }
+
 if (domination == 108)
 {
 
 	output = "100%";
 }
+
+

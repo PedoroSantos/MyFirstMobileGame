@@ -3,7 +3,7 @@
 globalvar onmenu0;
 onmenu0 = 1;
 globalvar money;
-money = 1000000000000000000000000;
+money = 100000;
 globalvar day;
 day = 0;
 globalvar lvl;
@@ -15,13 +15,13 @@ clients = 0;
 
 // variaveis de missões
 globalvar mission;
-mission[0] = "Open PC.";
-mission[1] = "Open Antenna Menu.";
-mission[2] = "Switch Themes.";
+mission[0] = "";
+mission[1] = "";
+mission[2] = "";
 missionlvl = 1;
-clmiss[1] = c_black;
-clmiss[2] = c_black;
-clmiss[3] = c_black;
+clmiss[1] = c_white;
+clmiss[2] = c_white;
+clmiss[3] = c_white;
 notpause = 0;
 
 

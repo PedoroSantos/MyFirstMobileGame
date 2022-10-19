@@ -1,2 +1,2 @@
-if (onmenu1 = 0) exit;
+if (onmenu3 = 0) exit;
 theme -= 1;

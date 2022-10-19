@@ -12,7 +12,7 @@ if (onclicked)
 		layer_set_visible("ins_pc",1);
 		layer_set_visible("ins_pc_hud",1);
 		layer_set_visible("ef_blur",1);
-		
+		layer_set_visible("ins_apps",1);
 		stimer = 4;
 		onclicked = 0;
 		global.pause = 1;

@@ -1,0 +1,1 @@
+if (taptime <= 0) layer_set_visible("as_alien", 1);

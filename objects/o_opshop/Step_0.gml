@@ -5,6 +5,14 @@ if (onclicked = 1)
 	stimer--;
 	if (stimer<=0)
 	{
+		o_shopitem2.tapped2 = 0;
+		o_shopitem1.tapped4 = 0;
+		o_shopitem3.tapped3 = 0;
+		o_shopitem3.tapped4 = 0;
+		layer_set_visible("ins_themes",0);
+		global.onthemes = 0;
+		
+		
 		image_xscale = 2;
 		image_yscale = 2;
 		if (layer_get_visible("ins_shop"))
