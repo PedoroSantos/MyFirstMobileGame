@@ -6,9 +6,8 @@
 
 <hr>
 
-### Download and play
+### - Download and play
 >available only for android
->
 
 
 <a href='https://play.google.com/store/apps/details?id=com.hopellesstudio.net'><img align='center' height='65' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'></a>
@@ -17,7 +16,7 @@
 
 <hr>
 
-### ❓About:
+### - About:
 
-This project was developed by Senac high school students,
+This project was developed by Senac high school students,<br>
 with the aim of making a mobile game about networks.
