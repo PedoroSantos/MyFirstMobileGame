@@ -9,4 +9,4 @@
 <article>
 This project was developed by Senac high school students,
 with the aim of making a mobile game about networks.
-
+</article>
