@@ -11,6 +11,7 @@
 
 A game about managing a network company
 <br>
+
 This project was developed by Senac high school students,<br>
 with the aim of making a mobile game about networks.
 
