@@ -2,6 +2,9 @@
 
 ![version](https://img.shields.io/badge/Version%3A-0.6-blue)
 ![status](https://img.shields.io/badge/Status%3A-released-green)
+<a href='https://play.google.com/store/apps/details?id=com.hopellesstudio.net'><img align='center' height='55' src='./docs/images/google_play_badge.png'></a>
+
+
 <hr>
 
 ### About
