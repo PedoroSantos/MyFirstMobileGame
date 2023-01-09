@@ -4,5 +4,5 @@
 ![status](https://img.shields.io/badge/Status%3A-released-green)
 <hr>
 
--This project was developed by Senac high school students, 
+This project was developed by Senac high school students, 
 with the aim of making a mobile game about networks.
