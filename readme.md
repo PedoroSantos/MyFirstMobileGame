@@ -6,7 +6,15 @@
 
 <hr>
 
-### - Download and play
+### - About
+
+This project was developed by Senac high school students,<br>
+with the aim of making a mobile game about networks.
+
+
+<hr>
+
+### - Download
 >available only for android
 
 
@@ -14,9 +22,3 @@
 
 
 
-<hr>
-
-### - About:
-
-This project was developed by Senac high school students,<br>
-with the aim of making a mobile game about networks.
