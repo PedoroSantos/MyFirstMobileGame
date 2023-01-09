@@ -6,11 +6,15 @@
 
 <hr>
 
-### Install
+### ⬇️Download and play:
+
+The game is now available for download for mobile phones
 
 <a href='https://play.google.com/store/apps/details?id=com.hopellesstudio.net'><img align='center' height='65' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'></a>
 
-### About
+>available only for android
+
+### ❓About:
 
 This project was developed by Senac high school students,
 with the aim of making a mobile game about networks.
