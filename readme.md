@@ -1,6 +1,7 @@
 
 ### Web Manager Tycoon
 > A game about managing a network company
+<br>
 ![version](https://img.shields.io/badge/version%3A-0.6-blue)
 ![version2](https://img.shields.io/badge/released_version%3A-3.1.1-blue)
 ![status](https://img.shields.io/badge/Status%3A-released-green)
