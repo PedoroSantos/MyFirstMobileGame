@@ -1,6 +1,3 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-*.gml linguist-detectable=false
-*.yacc linguist-detectable=false
-*.gml linguist-detectable=false
