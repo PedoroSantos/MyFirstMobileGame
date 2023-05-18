@@ -2,3 +2,5 @@
 * text=auto
 
 *.gml linguist-detectable=false
+*.yacc linguist-detectable=false
+*.gml linguist-detectable=false
